@@ -1,8 +1,18 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Home,About,SingUp,Singin,Profile } from './pages';
 
 const App = () => {
   return (
-    <h1 className='text-red-700'>App</h1>
+   <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/singup' element={<SingUp/>}/>
+      <Route path='/singin' element={<Singin/>}/>
+      <Route path='/profile' element={<Profile/>}/>
+    </Routes>
+   </BrowserRouter>
   )
 }
 
