@@ -1,17 +1,18 @@
 {
-  "name": "realstate",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server/index.js",
-    "start": "node server/index.js"
+    "dev": "nodemon server/app.js",
+    "start": "node server/app.js"
   },
   "keywords": [],
-  "author": "Tharushaa Dhananjani Samaraweera",
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.6.1",
