@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 // routes
-app.use('/api/user', authRoutes);
+app.use('/api/auth', authRoutes);
 
 // Error Handing Middelware
 app.use((err, req, res, next) => {
@@ -23,7 +23,7 @@ app.use((err, req, res, next) => {
   });
 
 // port number 
-const port =  5000;
+const port =  3000;
 
 const start = async () =>{
     try {

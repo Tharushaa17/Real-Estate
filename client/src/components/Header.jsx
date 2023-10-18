@@ -20,8 +20,8 @@ const Header = () => {
                 <Link to='/about'>
                     <li className='hidden sm:inline text-slate-700 hover:underline'>About</li>
                 </Link>
-                <Link to='/singin'>
-                    <li className='text-slate-700 hover:underline'>Sing in</li>
+                <Link to='/sign-up'>
+                    <li className='text-slate-700 hover:underline'>Sign Up</li>
                 </Link>
             </ul>
         </div>

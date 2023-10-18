@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home,About,SingUp,Singin,Profile } from './pages';
+import { Home,About,SignUp,Signin,Profile } from './pages';
 import Header from './components/Header';
 
 const App = () => {
@@ -10,8 +10,8 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
-      <Route path='/singup' element={<SingUp/>}/>
-      <Route path='/singin' element={<Singin/>}/>
+      <Route path='/sign-up' element={<SignUp/>}/>
+      <Route path='/sign-in' element={<Signin/>}/>
       <Route path='/profile' element={<Profile/>}/>
     </Routes>
    </BrowserRouter>
