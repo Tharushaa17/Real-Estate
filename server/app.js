@@ -1,15 +1,19 @@
 import express from 'express';
 import connectDB from './src/utils/db.connector.js';
 import authRoutes from './src/routes/auth.routes.js';
+import userRoutes from './src/routes/user.routes.js';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 const app = express();
 
 // Middelware
 app.use(express.json());
+app.use(cookieParser());
 
 // routes
 app.use('/api/auth', authRoutes);
+app.use('/api/user', userRoutes);
 
 // Error Handing Middelware
 app.use((err, req, res, next) => {
