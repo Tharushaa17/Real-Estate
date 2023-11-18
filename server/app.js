@@ -2,6 +2,7 @@ import express from 'express';
 import connectDB from './src/utils/db.connector.js';
 import authRoutes from './src/routes/auth.routes.js';
 import userRoutes from './src/routes/user.routes.js';
+import listingsRoutes from './src/routes/listings.routes.js';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 dotenv.config();
@@ -14,6 +15,7 @@ app.use(cookieParser());
 // routes
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/listing', listingsRoutes);
 
 // Error Handing Middelware
 app.use((err, req, res, next) => {
