@@ -29,7 +29,7 @@ app.use((err, req, res, next) => {
   });
 
 // port number 
-const port =  3000;
+const port =  5000;
 
 const start = async () =>{
     try {
